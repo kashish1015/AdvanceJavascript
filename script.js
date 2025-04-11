@@ -185,6 +185,159 @@
 // doingStuff();
 // console.log(x);
 
+//immediately invoked function expression(IIFE)
+//define krte hi invoke kr skte hain
+//example of primitive function
+// (function() {
+//     console.log("IIFE!");
+// })();
+
+//arrow function ko bhi as IIFE use kar sakte hain
+// (()=> {
+//     console.log("run right away");
+// })();
+
+//Recusive functions
+// function getRecursive(nr) {
+//     console.log(nr);
+//     getRecursive(--nr);
+// }
+// getRecursive(3);
+//stack overflow ho rha toh this is because memory limited hai toh but chala ye infinite tkk hi hai
+// function getRecursive(nr) {
+//     console.log(nr);
+//     if(nr>0){
+//     getRecursive(--nr);
+// }
+// }
+// getRecursive(3);
+
+//changing the position of console
+// function getRecursive(nr) {
+    
+//     if(nr>0){
+//     getRecursive(--nr);
+// }
+//     console.log(nr);  
+// }
+// getRecursive(3);
+
+// function logRecursive(nr){
+//     console.log("Started function:",nr);
+//     if(nr>0){
+//         logRecursive(nr-1);
+//     }else{
+//         console.log("done with function");
+//     }
+//     console.log("ended function:",nr)
+// }
+//     logRecursive(3);
+
+//The performance of recursion is slightly worse than the performance of regular iteration.Iteration is faster.So if this causes bottleneck sitaution that would really slow down your application,then we might want to consider another approach
+
+//Nested Functions
+// function doOuterFunctionsStuff(nr){
+//     console.log("Outer function");
+//     doInnerFunctionStuff(nr);
+//     function doInnerFunctionStuff(x){
+//         console.log(x+7);
+//         console.log("I can access outer variables:",nr);
+//     }
+// }
+// doOuterFunctionsStuff(2);
+
+//just another function example
+// function outerFunction(nr){
+//     doInnerFunction(nr);
+//     function doInnerFunction(x) {
+//         let z= 10;
+//     }
+//     console.log("Not accessible:",z);
+// }
+// outerFunction(2);
+
+//Anonymous Function functions without name
+// let functionVariable = function() {
+//     console.log("Not so secret thought.");
+    
+// };
+// functionVariable();
+
+// //Function Callbacks=> passing a function as an arguement
+// function doFlexibleStuff(executeStuff){
+//     executeStuff();
+//     console.log("Inside doFlexibleStuff:");
+// }
+// doFlexibleStuff(functionVariable);
+//synchronous mtlb blocking code
+
+//Built in Functions of js
+//setTimeOut() is a special function that is executing a certain function after a specified amount of time that it will wait first.SetTimeOut() is one time execution
+// let youGotThis = function () {
+//     console.log("You're doing well!");
+// };
+// setTimeout(youGotThis,1000);
+
+//setInterval()=>it will keep on executing it with the specified interval.Baar baar call karta hai terminate krne ke liye control c use krenge
+// let youGotThis = function () {
+//     console.log("You're doing well!");
+// };
+// setInterval(youGotThis,2000);
+
+
+//Output Question
+//Q1
+//scope concept
+// let val=10;
+// function tester(val){
+//     val+=10;
+//     if(val<100) {
+//         return tester(val);
+//     }
+//     return val;
+// }
+// tester(val);
+// console.log(val);
+
+//Q2
+// let testFunction = function(){
+//     console.log("Hello");
+// }();
+
+// Q3
+// (function (){
+//     console.log("Welcome");
+// })();
+
+//Q4
+// (function () {
+//     console.log("Welcome");
+// })();
+// (function(){
+//     let firstName ="Laurence";
+// })();
+// let result = (function() {
+//     let firstName="Laurecnce";
+//     return firstName;
+// })();
+// console.log(result);
+// (function(firstName) {
+//     console.log("My name is"+ firstName);
+// })("Laurence");
+
+//Q5
+// var addFive1 = function addFive1(num) {
+//     return num+2;
+// };
+// let addFive2 = (num) => num+2;
+// console.log(addFive1(14));
+
+
+
+
+
+
+
 
 
 
