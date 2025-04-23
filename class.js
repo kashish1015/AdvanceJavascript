@@ -191,22 +191,25 @@
 //we cannot access any Motorcycle specific properties or methods in our vehicle class
 
 //PROTOTYPES
-//that makes it possible to have objects.When nothing is specified when creating a class the objects inherits from objecy.prototype prototype.
+//that makes it possible to have objects.When nothing is specified when creating a class the objects inherits from object.prototype prototype.
 //CLassName.prototype
-//to add properties or methods to an object
-class Person {
-    constructor(firstname,lastname){
-        this.firstname=firstname;
-        this.lastname=lastname;
-    }
-    greet(){
-        console.log("hi there! I'm",this.firstname);
-    }
-}
-Person.prototype.introduce = function () {
-    console.log("Hi,I'm",this.firstname);
-};
-Person.prototype.favouriteColor = "green";
-let p = new Person("Kashish","Singh");
-console.log(p.favouriteColor);
-p.introduce();
+//to add properties or methods to an object later on
+
+// class Person {
+//     constructor(firstname,lastname){
+//         this.firstname=firstname;
+//         this.lastname=lastname;
+//     }
+//     greet(){
+//         console.log("hi there! I'm",this.firstname);
+//     }
+// }
+// //to add a function to this class later on
+// Person.prototype.introduce = function () {
+//     console.log("Hi,I'm",this.firstname);
+// };
+// Person.prototype.favouriteColor = "green";
+// let p = new Person("Kashish","Singh");
+// console.log(p.favouriteColor);
+// p.introduce();
+
