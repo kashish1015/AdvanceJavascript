@@ -204,8 +204,8 @@
 // console.log(x);
 
 //JavaScript Array includes()
-const fruits=["Bananas","Oranges","Apples","Mangoes"];
-console.log(fruits.includes("Mangoes"));
+// const fruits=["Bananas","Oranges","Apples","Mangoes"];
+// console.log(fruits.includes("Mangoes"));
 
 //Start the search at position 3:
 // fruits.includes("Bananas",3);
@@ -219,16 +219,16 @@ console.log(fruits.includes("Mangoes"));
 // ];
 // console.log(arr);
 
-const arr=[
-    "one",
-    "two",
-    "three",,
-];
-console.log(arr);
-console.log(arr.length);
+// const arr=[
+//     "one",
+//     "two",
+//     "three",,
+// ];
+// console.log(arr);
+// console.log(arr.length);
 
-const sparseArray=[1,,,4,5,,];
-console.log(sparseArray);
+// const sparseArray=[1,,,4,5,,];
+// console.log(sparseArray);
 
 //Using trailing commas in objects
 // const person = {
